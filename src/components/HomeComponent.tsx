@@ -15,8 +15,7 @@ const Houses = () => {
     if (num !== null) {
       setNum(num + 1);
     } else {
-      // Gérer le cas où num est null (s'il est initialisé à null)
-      // Vous pouvez choisir de l'initialiser à 0 dans ce cas.
+     
       setNum(1);
     }
   };

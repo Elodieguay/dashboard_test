@@ -22,7 +22,7 @@ export default function Login(){
     
       dispatch(setUser({ email: username, password }));
 
-      console.log('handleSubmit is called'); // Ajoutez cette ligne
+      console.log('handleSubmit is called'); 
       console.log('username:', username);
       console.log('password:', password);
       
@@ -54,8 +54,10 @@ export default function Login(){
                 onChange={(event) => setPassword(event.target.value)} 
                 />
               <button 
-                onClick={()=> setPasswordVisible(!passwordVisible)}>
+                onClick={()=> setPasswordVisible(!passwordVisible)}
+                type='button'>
                   {passwordVisible ? <BsEyeSlash/> : <BsEye/>}
+              
               </button>
               </p>
             </label>
@@ -71,7 +73,9 @@ export default function Login(){
           </div>
             <button 
             className=' bg-[#369C96] text-white   flex items-center justify-center md:w-[24] max-[420px]:h-5 md:h-16 md:gap-[10px]  py-[22px] md:px-[50px] rounded-lg max-[420px]:mt-6 max-[420px]:m-4' 
-            type="submit">SE CONNECTER
+            type="submit"
+            >SE CONNECTER
+            
             </button>
         </form>
       </div>
